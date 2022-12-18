@@ -240,7 +240,7 @@ margin-bottom: 10px;
 
   .section_one {
     background-image: url("assets/images/bg_section_one_mobile2.jpg");
-    background-size: cover;
+    background-size: auto;
     background-position: center;
     position: relative;
   }
