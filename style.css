@@ -344,6 +344,8 @@ margin-bottom: 10px;
 
   .section_one {
     background-image: url("assets/images/bg_section_one_mobile.jpg");
+    background-size: auto;
+    background-position: top;
     position: relative;
   }
 
@@ -393,6 +395,7 @@ margin-bottom: 10px;
 
   h1 {
     font-size: 25px;
+    color: var(--dark);
   }
 
   h2 {
