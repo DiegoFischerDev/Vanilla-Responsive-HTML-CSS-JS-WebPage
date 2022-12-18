@@ -102,7 +102,7 @@ a {
   color: var(--grey);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
 
   #menu_options {
     display: none;
@@ -113,8 +113,8 @@ a {
   }
 
   .section_one {
-    background-image: url("assets/images/bg_section_one_mobile2.jpg");
-    background-size: auto;
+    background-image: url("assets/images/bg_section_three_mobile2.jpg");
+    background-size: cover;
     background-position: center;
     position: relative;
   }
