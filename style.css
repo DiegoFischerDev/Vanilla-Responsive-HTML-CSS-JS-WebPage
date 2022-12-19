@@ -72,7 +72,7 @@ a {
   padding: 10px 100px;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 99;
 }
 
 .menu_itens {
@@ -106,8 +106,10 @@ a {
   background-image: url("assets/images/bg_section_one.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  position: fixed;
   height: 100vh;
+  width: 100vw;
+  z-index: 100;
 }
 
 .section_one .cards {
@@ -334,6 +336,19 @@ margin-bottom: 10px;
 
 @media (max-width: 800px) {
 
+  h1 {
+    font-size: 25px;
+    color: var(--dark);
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
   #menu_options {
     display: none;
   }
@@ -346,7 +361,6 @@ margin-bottom: 10px;
     background-image: url("assets/images/bg_section_one_mobile.jpg");
     background-size: auto;
     background-position: top;
-    position: relative;
   }
 
   .section_one .cards {
@@ -381,29 +395,17 @@ margin-bottom: 10px;
   .section_three {
     background-image: url("assets/images/bg_section_three_mobile2.jpg");
     padding: 15px 50px;
-    height: 1200px;
+    height: 1250px;
   }
 
   .section_three h1 {
     text-align: center;
     margin-bottom: 550px;
+    color: var(--grey);
   }
 
   .section_three .text_box {
     width: 100%;
-  }
-
-  h1 {
-    font-size: 25px;
-    color: var(--dark);
-  }
-
-  h2 {
-    font-size: 15px;
-  }
-
-  h3 {
-    font-size: 15px;
   }
 
 }
