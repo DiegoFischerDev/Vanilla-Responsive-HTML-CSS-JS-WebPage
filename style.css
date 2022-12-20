@@ -25,6 +25,10 @@ body, button, input, select, textarea {
   color: rgb(0, 0, 0);
 }
 
+body {
+  overflow-x: hidden;
+}
+
 button {
   height: 40px;
   background: var(--blue);
@@ -67,49 +71,147 @@ a {
   text-decoration: none;
 }
 
-.section_menu {
-  background-color: var(--dark);
-  padding: 10px 100px;
+.hiden {
+  display: none;
+  /* height: 0 !important; 
+  width: 0 !important; */
+}
+
+.section_menu_mobile {
+  display: none;
+}
+
+.section_menu_web {
+  display: flex;
   position: sticky;
   top: 0;
-  z-index: 99;
+  width: 0;
+  height: 0;
+  z-index: 101;
 }
 
-.menu_itens {
+.section_menu_web .container{
+  background-color: var(--dark);
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  height: 100vh;
+  width: 60px;
+  padding: 20px 0;
 }
 
-.menu_itens div{
+.section_menu_web img {
+  position: absolute;
+  left: 12px;
+  height: 50px;
+}
+
+.section_menu_web .menu_option {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  max-width: 800px;
+  background-size: cover;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  z-index: 102;
 }
 
-.menu_itens img{
-  width: 250px;
+.container_hiden #logo_agni_text {
+  position: absolute;
 }
 
-.menu_itens #hamburguer{
-  width: 40px;
-  display:none;
+.container_hiden .menu_option h3 {
+  margin-left: 60px;
+  color: var(--dark_grey);
+  font-size: 20px;
 }
 
-.menu_itens a{
+.container_hiden .menu_option h3:hover {
   color: var(--grey);
+}
+
+.section_menu_web #option_one {
+  background-image: url("assets/icons/serviços.png");
+}
+
+.section_menu_web #option_one:hover {
+  background-image: url("assets/icons/serviços_hover.png");
+}
+
+.section_menu_web #option_two {
+  background-image: url("assets/icons/quem.png");
+}
+
+.section_menu_web #option_two:hover {
+  background-image: url("assets/icons/quem_hover.png");
+}
+
+.section_menu_web #option_three {
+  background-image: url("assets/icons/projetos.png");
+}
+
+.section_menu_web #option_three:hover {
+  background-image: url("assets/icons/projetos_hover.png");
+}
+
+.section_menu_web #option_four {
+  background-image: url("assets/icons/planos.png");
+}
+
+.section_menu_web #option_four:hover {
+  background-image: url("assets/icons/planos_hover.png");
+}
+
+.section_menu_web #option_five {
+  background-image: url("assets/icons/depoimentos.png");
+}
+
+.section_menu_web #option_five:hover {
+  background-image: url("assets/icons/depoimentos_hover.png");
+}
+
+.section_menu_web #option_six {
+  background-image: url("assets/icons/duvidas.png");
+}
+
+.section_menu_web #option_six:hover {
+  background-image: url("assets/icons/duvidas_hover.png");
+}
+
+.section_menu_web .space {
+  width: 50px;
+  height: 70px;
+}
+
+.section_menu_web .container_hiden {
+  background-color: var(--dark);
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100vh;
+  opacity: 0;
+  transition: 0.7s;
+  z-index: 103;
+}
+
+.section_menu_web .container_hiden:hover {
+  width: 250px;
+  opacity: 1;
 }
 
 .section_one {
   background-image: url("assets/images/bg_section_one.jpg");
   background-size: cover;
   background-position: center;
-  position: fixed;
+  background-attachment: fixed;
   height: 100vh;
   width: 100vw;
   z-index: 100;
+  transition: 0.5s;
 }
 
 .section_one .cards {
@@ -120,6 +222,7 @@ a {
   height: 150px;
   align-items: center;
   justify-content: space-around;
+  display: none;
 }
 
 .section_one .card {
@@ -217,12 +320,9 @@ margin-bottom: 10px;
 
 .section_two .curiosidade {
   text-align: center;
-  color: var(--grey);
+  color: var(--dark);
   margin: 50px auto 20px auto;
   padding: 20px;
-  border-radius: 20px;
-  background-color: var(--dark_grey);
-  transition: 0.3s;
 }
 
 .section_two span {
@@ -234,9 +334,9 @@ margin-bottom: 10px;
   background-image: url("assets/images/bg_section_three2.jpg");
   background-size: cover;
   background-position: top;
+  background-attachment: fixed;
   color: var(--white);
-  padding: 60px 100px;
-  height: 800px;
+  padding: 100px 100px;
 }
 
 .section_three h1 {
@@ -271,12 +371,16 @@ margin-bottom: 10px;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  height: 650px;
   transition: 0.25s;
 }
 
+.section_four h1 {
+  margin: 50px auto 30px auto;
+}
+
 .section_four button {
-  margin-top: 30px;
+  margin: 50px auto;
+  padding: 30px;
 }
 
 .section_six {
@@ -300,16 +404,9 @@ margin-bottom: 10px;
 /******************** Media query ***********************/
 
 @media (max-width: 1200px) {
-  a, .section_menu button{
+
+  a {
     font-size: 15px;
-  }
-
-  .menu_itens img{
-    width: 200px;
-  }
-
-  .section_menu {
-    padding: 10px 50px;
   }
 
   h1 {
@@ -342,19 +439,43 @@ margin-bottom: 10px;
   }
 
   h2 {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   h3 {
+    font-size: 18px;
+  }
+
+  .section_menu_web {
+display: none;
+  }
+
+  .section_menu_mobile {
+    display: block;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: var(--dark);
+    padding: 10px;
+    z-index: 99;
+  }
+  
+  .menu_itens {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu_itens img{
+    width: 180px;
+    cursor: pointer;
+  }
+
+  .menu_itens button{
     font-size: 15px;
-  }
-
-  #menu_options {
-    display: none;
-  }
-
-  .menu_itens #hamburguer{
-    display:block;
+    margin-top: 0;
+    padding: 10px;
   }
 
   .section_one {
@@ -364,6 +485,7 @@ margin-bottom: 10px;
   }
 
   .section_one .cards {
+    display: inherit;
     position: absolute;
     bottom: 100px;
     display: grid;
@@ -394,8 +516,9 @@ margin-bottom: 10px;
 
   .section_three {
     background-image: url("assets/images/bg_section_three_mobile2.jpg");
-    padding: 15px 50px;
-    height: 1250px;
+    background-attachment: initial;
+    padding: 15px 50px 20px 50px;
+    height: 1300px;
   }
 
   .section_three h1 {
