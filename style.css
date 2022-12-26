@@ -493,7 +493,7 @@ margin-bottom: 10px;
 
 .section_five h1 {
  color: var(--grey);
- margin: 50px;
+ margin: 100px;
 }
 
 .section_five .container {
@@ -597,7 +597,6 @@ margin-bottom: 10px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-bottom: 100px;
 }
 
 .section_six .container h1 {
@@ -609,17 +608,21 @@ margin-bottom: 10px;
 }
 
 .section_six .container h3 {
-  margin-top: 30px;
+  margin-top: 50px;
   width: 70%;
 }
 
 .section_six .container img {
   width: 70%;
+  margin-bottom: 100px;
 }
 
 .section_seven {
-  background-color: var(--dark);
-  padding: 20px;
+  background-image: url("assets/images/bg_section_77.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
 }
 
 .section_seven .container {
@@ -634,10 +637,14 @@ margin-bottom: 10px;
   grid-auto-columns: 1fr 1fr;
 }
 
+.section_seven .testimony_card {
+  margin: 0 auto;
+}
+
 .section_seven h1 {
   color: var(--grey);
   text-align: center;
-  margin: 50px;
+  margin: 0 0 100px 0;
 }
 
 .section_seven .container h3 {
@@ -893,6 +900,15 @@ display: none;
   .section_six .container img {
     margin-top: 30px;
     width: 90%;
+  }
+
+  .section_seven {
+    padding: 70px 0;
+  }
+
+  .section_seven h1 {
+    margin: 200px 0 100px 0;
+    font-size: 30px;
   }
 
   .section_seven .container {
