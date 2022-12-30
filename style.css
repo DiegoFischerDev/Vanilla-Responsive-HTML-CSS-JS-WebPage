@@ -238,7 +238,7 @@ a {
   color: var(--hover);
 
   /* filter: drop-shadow(0px 0px 1px #4b4b50);   blur effect  */
-  animation: flutuar 3s linear infinite;
+  animation: flutuar 4s linear infinite;
 }
 
 @keyframes flutuar {
@@ -247,28 +247,28 @@ a {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-23px);
+    transform: translateY(-10px);
   }
 }
 
 .cards .card:nth-child(2) {
-  animation-delay: 1s;
+  animation-delay: -2s;
 }
 
 .cards .card:nth-child(3) {
-  animation-delay: 2s;
+  animation-delay: 0s;
 }
 
 .cards .card:nth-child(4) {
-  animation-delay: 3s;
+  animation-delay: 0s;
 }
 
 .cards .card:nth-child(5) {
-  animation-delay:4s;
+  animation-delay: -2s;
 }
 
 .cards .card:nth-child(6) {
-  animation-delay: 5s;
+  animation-delay: 0s;
 }
 
 .section_one .card:hover {
@@ -474,7 +474,7 @@ margin-bottom: 10px;
   display: center;
   align-items: center;
   justify-content: center;
-  padding: 6px 20px 0 0;
+  padding: 0 20px 0 0;
   height: 64px;
   border-radius: 20px;
   margin-bottom: 80px;
@@ -493,7 +493,7 @@ margin-bottom: 10px;
 
 .section_five h1 {
  color: var(--grey);
- margin: 100px;
+ margin: 100px 0;
 }
 
 .section_five .container {
@@ -903,11 +903,13 @@ display: none;
   }
 
   .section_seven {
-    padding: 70px 0;
+    background-image: url("");
+    background-color: var(--dark);
+    padding: 30px 0;
   }
 
   .section_seven h1 {
-    margin: 200px 0 100px 0;
+    margin: 120px 0 100px 0;
     font-size: 30px;
   }
 
@@ -916,6 +918,78 @@ display: none;
     padding: 0;
     grid-template-areas: 
     "item";
+  }
+
+}
+
+@media (max-width: 340px) {
+
+  h1 {
+    font-size: 25px;
+    color: var(--dark);
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  .section_one {
+    height: 100vh;
+    background-image: url("assets/images/bg_section_one_mobile2.jpg");
+    background-size: cover;
+    background-position: top;
+  }
+
+  .section_one .cards {
+    display: flex;
+    position: absolute;
+    bottom: -50px;
+    display: grid;
+    grid-template-areas: 
+    "item item item"
+    "item item item";
+    gap: 20px 0;
+    width: 100%;
+  }
+  
+  .section_one .card {
+    width: 90px;
+    height: 70px;
+  }
+
+  .section_one .card h3 {
+    font-size: 10px;
+  }
+
+  .section_menu_mobile img {
+    width: 150px;
+  }
+
+  .section_menu_mobile button {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .section_three {
+    height: 1450px;
+  }
+
+  .section_three {
+    background-image: url("assets/images/bg_section_three_mobile22.jpg");
+    background-size: cover;
+    background-position: top;
+  }
+
+  .section_four_mobile button {
+    font-size: 15px;
+  }
+
+  .section_five h2 {
+    font-size: 20px !important;
   }
 
 }
