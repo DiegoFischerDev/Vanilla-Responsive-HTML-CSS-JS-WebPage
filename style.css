@@ -419,6 +419,7 @@ margin-bottom: 10px;
 
 .section_three .text_box p {
   margin-top: 30px;
+  text-align: justify;
 }
 
 .section_three .text_box h3 span{
@@ -688,6 +689,54 @@ margin-bottom: 10px;
   padding: 10px 0;
 }
 
+.section_eight {
+  background-color: var(--dark);
+  color: var(--grey);
+  padding: 60px 50px 60px 100px;
+}
+
+.section_eight h1 {
+  text-align: center;
+  margin: 60px auto 100px auto;
+}
+
+.section_eight .faq_card {
+  max-width: 1000px;
+  margin: 0 auto 30px auto;
+}
+
+.section_eight img {
+  width: 18px;
+  height: 20px;
+}
+
+.section_eight .question {
+  background-color: #EDEDED;
+  color: var(--hover);
+  padding: 20px 50px;
+  border-radius: 30px 30px 0 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-left: 2px solid var(--hover);
+  border-top: 2px solid var(--hover);
+  border-right: 2px solid var(--hover);
+}
+
+.section_eight .answer {
+  background-color: var(--grey);
+  color: var(--hover);
+  padding: 0px 50px 50px 50px;
+  text-align: justify;
+  border-radius: 0 0 30px 30px;
+  border-left: 2px solid var(--hover);
+  border-bottom: 2px solid var(--hover);
+  border-right: 2px solid var(--hover);
+}
+
+
+
 /******************** Media query ***********************/
 
 @media (max-width: 1200px) {
@@ -920,8 +969,7 @@ display: none;
   }
 
   .section_seven h1 {
-    margin: 120px 0 100px 0;
-    font-size: 30px;
+    margin: 80px 0 100px 0;
   }
 
   .section_seven .container {
@@ -929,6 +977,22 @@ display: none;
     padding: 0;
     grid-template-areas: 
     "item";
+  }
+
+  .section_eight {
+    padding: 30px 20px;
+  }
+
+  .section_eight h1 {
+    color: var(--grey);
+  }
+
+  .section_eight .question {
+    padding: 20px 20px;
+  }
+
+  .section_eight .answer {
+    padding: 20px 20px;
   }
 
 }
