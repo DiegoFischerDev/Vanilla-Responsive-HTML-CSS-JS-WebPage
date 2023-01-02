@@ -292,12 +292,13 @@ a {
 .section_two h1 {
   margin: 30px auto 0 auto;
   max-width: 900px;
-  text-align: center;
+  text-align: justify;
 }
 
 .section_two h2 {
 font-weight: normal;
 margin-bottom: 10px;
+text-align: center;
 }
 
 .section_two span {
@@ -308,6 +309,8 @@ margin-bottom: 10px;
   color: var(--white);
   font-size: 20px;
   text-align: center;
+  background-color: var(--hover);
+  border-radius: 30px;
 }
 
 .section_two #serviços_que_ofereço .paragrafo h2 {
@@ -605,6 +608,12 @@ margin-bottom: 10px;
   text-align: center;
 }
 
+.section_six .divider_line {
+  margin: auto;
+  width: 100%;
+  border-bottom: 1px solid var(--hover);
+}
+
 .section_six .container h1 {
   margin-top: 100px;
 }
@@ -616,6 +625,7 @@ margin-bottom: 10px;
 .section_six .container h3 {
   margin-top: 50px;
   width: 70%;
+  text-align: justify;
 }
 
 .section_six .container img {
@@ -701,38 +711,73 @@ margin-bottom: 10px;
 }
 
 .section_eight .faq_card {
+  background-color: var(--grey);
   max-width: 1000px;
   margin: 0 auto 30px auto;
+  border: 2px solid var(--hover);
+  border-radius: 30px;
 }
 
 .section_eight img {
   width: 18px;
   height: 20px;
+  margin: 0 10px 0 20px;
+}
+
+.section_eight h3 {
+  text-align: justify;
 }
 
 .section_eight .question {
-  background-color: #EDEDED;
   color: var(--hover);
   padding: 20px 50px;
-  border-radius: 30px 30px 0 0;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-left: 2px solid var(--hover);
-  border-top: 2px solid var(--hover);
-  border-right: 2px solid var(--hover);
 }
 
 .section_eight .answer {
-  background-color: var(--grey);
   color: var(--hover);
   padding: 0px 50px 50px 50px;
   text-align: justify;
-  border-radius: 0 0 30px 30px;
-  border-left: 2px solid var(--hover);
-  border-bottom: 2px solid var(--hover);
-  border-right: 2px solid var(--hover);
+}
+
+footer {
+  background-color: var(--dark);
+  color: var(--grey);
+}
+
+footer .container {
+  margin: auto;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer button {
+  height: 60px;
+  margin-top: 30px;
+}
+
+footer img {
+  display: flex;
+  justify-content: center;
+  padding-left: 30px;
+  height: 50px;
+  margin: 10px auto;
+}
+
+footer p {
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 10px;
+}
+
+footer a {
+  color: var(--blue);
+  font-size: 10px;
 }
 
 
