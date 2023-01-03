@@ -72,6 +72,21 @@ a {
   text-decoration: none;
 }
 
+.whatsapp_link {
+  display: none;
+  position: sticky;
+  justify-content: right;
+  padding: 0 30px 0px 0;
+  top: 90vh;
+  height: 0;
+  z-index: 99;
+}
+
+.whatsapp_link img {
+  height: 50px;
+  width: 50px;
+}
+
 .hiden {
   display: none;
   /* height: 0 !important; 
@@ -165,6 +180,14 @@ a {
 
 .option_six:hover {
   background-image: url("assets/icons/duvidas_hover.png");
+}
+
+.option_seven {
+  background-image: url("assets/icons/whatsapp.png");
+}
+
+.option_seven:hover {
+  background-image: url("assets/icons/whatsapp_hover.png");
 }
 
 .section_menu_web .space {
@@ -286,13 +309,13 @@ a {
   background-image: url("assets/images/bg_section_two.jpg");
   background-size: cover;
   background-position: center;
-  padding: 70px 100px;
+  padding: 70px 100px 70px 150px;
 }
 
 .section_two h1 {
   margin: 30px auto 0 auto;
   max-width: 900px;
-  text-align: justify;
+  text-align: center;
 }
 
 .section_two h2 {
@@ -309,8 +332,11 @@ text-align: center;
   color: var(--white);
   font-size: 20px;
   text-align: center;
-  background-color: var(--hover);
   border-radius: 30px;
+}
+
+.section_two .carrossel h2 {
+  background-color: var(--hover);
 }
 
 .section_two #serviços_que_ofereço .paragrafo h2 {
@@ -842,6 +868,10 @@ footer a {
 display: none;
   }
 
+  .whatsapp_link {
+    display: flex;
+  }
+
   .section_menu_mobile {
     display: block;
     position: sticky;
@@ -852,19 +882,19 @@ display: none;
     z-index: 99;
   }
   
-  .menu_itens {
+  .section_menu_mobile .menu_itens {
     display: flex;
     margin: 0;
     justify-content: center;
     align-items: center;
   }
   
-  .menu_itens img{
+  .section_menu_mobile .menu_itens img{
     width: 180px;
     cursor: pointer;
   }
 
-  .menu_itens button{
+  .section_menu_mobile .menu_itens button{
     font-size: 15px;
     margin-top: 0;
     padding: 10px;
@@ -896,11 +926,11 @@ display: none;
   }
 
   .section_two h1 {
-    text-align: left;
+    text-align: center;
   }
 
   .section_two h2 {
-    text-align: left;
+    text-align: justify;
     color: var(--dark);
   }
 
