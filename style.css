@@ -76,8 +76,8 @@ a {
   display: none;
   position: sticky;
   justify-content: right;
-  padding: 0 30px 0px 0;
-  top: 90vh;
+  padding: 0 10px 0px 0;
+  top: 88vh;
   height: 0;
   z-index: 99;
 }
@@ -815,6 +815,24 @@ footer p {
   font-size: 10px;
 }
 
+footer #instagram {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer #instagram img {
+  margin: 10px 25px 10px 0;
+}
+
+footer #instagram a{
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 footer a {
   color: var(--blue);
   font-size: 10px;
@@ -864,6 +882,10 @@ footer a {
 }
 
 @media (max-width: 800px) {
+
+  .carrossel_card {
+    width: 75vw;
+  }
 
   h1 {
     font-size: 25px;
@@ -1147,10 +1169,6 @@ display: none;
 
   .section_five h2 {
     font-size: 20px !important;
-  }
-
-  .carrossel_card {
-    width: 250px;
   }
 
 }
