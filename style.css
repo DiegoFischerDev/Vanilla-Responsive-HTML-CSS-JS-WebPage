@@ -1000,7 +1000,7 @@ display: none;
   }
 
   .section_four_mobile .carrossel_card img {
-    min-width: 300px;
+    min-width: 200px;
     height: 300px;
     border-radius: 30px;
     border: 2px solid var(--dark_grey);
@@ -1147,6 +1147,10 @@ display: none;
 
   .section_five h2 {
     font-size: 20px !important;
+  }
+
+  .carrossel_card {
+    width: 250px;
   }
 
 }
