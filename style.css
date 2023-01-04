@@ -355,8 +355,7 @@ text-align: center;
 .carrossel_card {
   scroll-snap-align: start;
   border-radius: 30px;
-  min-height: 200px;
-  min-width: 300px;
+  width: 300px;
   display: flex;
   align-items: top;
   justify-content: center;
