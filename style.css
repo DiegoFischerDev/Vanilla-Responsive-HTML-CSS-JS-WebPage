@@ -233,12 +233,13 @@ a {
   width: 100vw;
   z-index: 100;
   transition: 0.5s;
+  overflow: hidden;
 }
 
 .section_one .container {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 20px 0;
   margin-left: 30px;
 }
 
@@ -355,7 +356,7 @@ text-align: center;
   scroll-snap-align: start;
   border-radius: 30px;
   min-height: 200px;
-  min-width: 260px;
+  min-width: 300px;
   display: flex;
   align-items: top;
   justify-content: center;
