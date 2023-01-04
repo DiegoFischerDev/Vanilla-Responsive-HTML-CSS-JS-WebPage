@@ -355,9 +355,9 @@ text-align: center;
   scroll-snap-align: start;
   border-radius: 30px;
   min-height: 200px;
-  min-width: 300px;
+  min-width: 260px;
   display: flex;
-  align-items: center;
+  align-items: top;
   justify-content: center;
 }
 
@@ -541,7 +541,7 @@ text-align: center;
 }
 
 .section_five #subtitle {
-  color: var(--grey);
+  color: rgb(202, 202, 203);
   margin-bottom: 80px;
  }
 
