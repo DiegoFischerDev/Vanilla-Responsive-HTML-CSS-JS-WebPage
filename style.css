@@ -228,14 +228,22 @@ a {
 }
 
 .section_one {
-  background-image: url("assets/images/bg_section_one.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: var(--dark);
   height: 100vh;
   width: 100vw;
   z-index: 100;
   transition: 0.5s;
+}
+
+.section_one .container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-left: 30px;
+}
+
+.section_one .container img {
+  height: 75vh;
 }
 
 .section_one .cards {
@@ -906,10 +914,8 @@ display: none;
     padding: 10px;
   }
 
-  .section_one {
-    background-image: url("assets/images/bg_section_one_mobile.jpg");
-    background-size: auto;
-    background-position: top;
+  .section_one .container img {
+    height: 50vh;
   }
 
   .section_one .cards {
@@ -1091,14 +1097,9 @@ display: none;
 
   h3 {
     font-size: 15px;
-  }
-
-  .section_one {
-    height: 100vh;
-    background-image: url("assets/images/bg_section_one_mobile2.jpg");
-    background-size: cover;
-    background-position: top;
-  }
+  }.section_one .container {
+  display: flex;
+}
 
   .section_one .cards {
     display: flex;
