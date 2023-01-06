@@ -1604,9 +1604,9 @@ body .options .option .label .info .sub {
   transform: translate3d(-100%, 0, 0);
 }
 
-/* [data-anime="right"] {
-  transform: translate3d(50px, 0, 0);
-} */
+[data-anime="right"] {
+  transform: translate3d(0, 100%, 0);
+}
 
 [data-anime].animate {
   opacity: 1;
