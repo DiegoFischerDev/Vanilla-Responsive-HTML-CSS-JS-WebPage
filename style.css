@@ -321,6 +321,18 @@ a {
   padding: 70px 100px 70px 150px;
 }
 
+.section_two .youtube {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section_two #youtube {
+  width: 80%;
+  margin: 0px auto 100px auto;
+}
+
 .section_two h1 {
   margin: 30px auto 0 auto;
   max-width: 900px;
