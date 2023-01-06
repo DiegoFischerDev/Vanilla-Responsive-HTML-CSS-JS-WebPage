@@ -323,7 +323,6 @@ a {
 
 .section_two .youtube {
   width: 100%;
-  padding: 0 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -333,6 +332,7 @@ a {
   max-width: 100vw !important;
   margin: 0px auto 100px auto;
   border-radius: 40px;
+  padding: 0 10px;
 }
 
 .section_two h1 {
