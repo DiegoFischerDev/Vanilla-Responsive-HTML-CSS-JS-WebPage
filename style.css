@@ -331,6 +331,7 @@ a {
 .section_two #youtube {
   max-width: 100vw !important;
   margin: 0px auto 100px auto;
+  border-radius: 40px;
 }
 
 .section_two h1 {
@@ -1214,6 +1215,10 @@ display: none;
 
   .section_five h2 {
     font-size: 20px !important;
+  }
+
+  .whatsapp_link {
+    display: flex;
   }
 
 }
