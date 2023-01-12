@@ -34,4 +34,4 @@ Disallow:
 User-agent: *
 Disallow: 
 Disallow: /secreto/
-Sitemap: https://urnauzao.github.io/html-todos-elementos/sitemap.xml
+Sitemap: https://www.suaarquiteta.com.br/sitemap.xml
