@@ -7,6 +7,80 @@ function hiden_section_one() {
   section_menu.classList.toggle('hiden')
 }
 
+/******* Section_Two ***************/
+
+function selectCard1 () {
+  const card1 =  document.getElementById('card1')
+  card1.classList.toggle('selected')
+
+  const text1 = document.getElementById('text1')
+  if (text1.innerHTML.length == 0) {
+    text1.innerHTML = 'Tornar os ambientes mais funcionais e produtivos.'
+  } else {
+    text1.innerHTML = ''
+  }
+}
+
+function selectCard2 () {
+  const card1 =  document.getElementById('card2');
+  card1.classList.toggle('selected')
+
+const text2 = document.getElementById('text2')
+  if (text2.innerHTML.length == 0) {
+    text2.innerHTML = 'Evitar refazer obras por falta de planejamento ou acompanhamento inadequado.'
+  } else {
+    text2.innerHTML = ''
+  }
+}
+
+function selectCard3 () {
+  const card3 =  document.getElementById('card3');
+  card3.classList.toggle('selected')
+
+const text3 = document.getElementById('text3')
+  if (text3.innerHTML.length == 0) {
+    text3.innerHTML = 'Organizar melhor os espaços, gerando sensação de harmonia, conforto e bem estar.'
+  } else {
+    text3.innerHTML = ''
+  }
+}
+
+function selectCard4 () {
+  const card4 =  document.getElementById('card4');
+  card4.classList.toggle('selected')
+
+  const text4 = document.getElementById('text4')
+  if (text4.innerHTML.length == 0) {
+    text4.innerHTML = 'Economizar tempo, ter listas de compras personalizadas e indicação de fornecedores.'
+  } else {
+    text4.innerHTML = ''
+  }
+}
+
+function selectCard5 () {
+  const card5 =  document.getElementById('card5');
+  card5.classList.toggle('selected')
+
+  const text5 = document.getElementById('text5')
+  if (text5.innerHTML.length == 0) {
+    text5.innerHTML = 'Projetar ambientes de acordo com as normas da AssociaçãoBrasileira de Normas Técnicas (ABNT), seguindo processos de segurança rígidos.'
+  } else {
+    text5.innerHTML = ''
+  }
+}
+
+function selectCard6 () {
+  const card6 =  document.getElementById('card6');
+  card6.classList.toggle('selected')
+
+  const text6 = document.getElementById('text6')
+  if (text6.innerHTML.length == 0) {
+    text6.innerHTML = 'Atrair mais clientes, alinhando o estilo da loja ao tipo do produto e a identidade da marca.'
+  } else {
+    text6.innerHTML = ''
+  }
+}
+
 
 /******* Section_four **************/
 $(".option").click(function () {

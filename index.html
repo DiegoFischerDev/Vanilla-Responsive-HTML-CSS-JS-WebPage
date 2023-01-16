@@ -225,68 +225,57 @@
 
       <h3 data-anime="up">Quais Fatores São Mais Importantes Para o Seu Projeto???</h3>
       <!-- For Web -->
-      <div class="webcards">
 
-        <div class="webcard">
-          <div>
-            <img src="assets/icons/funcionalidade.png" alt="ícone funcionalidade">
-            <h3>FUNCIONALIDADE</h3>
-            <h4>
-              Tornar os ambientes mais funcionais e produtivos.
-            </h4>
+        <div class="webcards">
+  
+          <div class="webcard" id="card1" onclick="selectCard1()">
+            <div>
+              <img src="assets/icons/funcionalidade.png" alt="ícone funcionalidade">
+              <h3>FUNCIONALIDADE</h3>
+              <h4 id="text1"></h4>
+            </div>
           </div>
-        </div>
-
-        <div class="webcard">
-          <div>
-            <img src="assets/icons/economia.png" alt="ícone economia">
-            <h3>ECONOMIA</h3>
-            <h4>
-              Evitar refazer obras por falta de planejamento ou acompanhamento inadequado.
-            </h4>
+  
+          <div class="webcard" id="card2" onclick="selectCard2()">
+            <div>
+              <img src="assets/icons/economia.png" alt="ícone economia">
+              <h3>ECONOMIA</h3>
+              <h4 id="text2"></h4>
+            </div>
           </div>
-        </div>
-
-        <div class="webcard">
-          <div>
-            <img src="assets/icons/estetica.png" alt="ícone estetica">
-            <h3>ESTÉTICA</h3>
-            <h4>
-              Organizar melhor os espaços, gerando sensação de harmonia, conforto e bem estar.
-            </h4>
+  
+          <div class="webcard" id="card3" onclick="selectCard3()">
+            <div>
+              <img src="assets/icons/estetica.png" alt="ícone estetica">
+              <h3>ESTÉTICA</h3>
+              <h4 id="text3"></h4>
+            </div>
           </div>
-        </div>
-
-        <div class="webcard">
-          <div>
-            <img src="assets/icons/tempo.png" alt="">
-            <h3>TEMPO</h3>
-            <h4>
-              Economizar tempo, ter listas de compras personalizadas e indicação de fornecedores.
-            </h4>
+  
+          <div class="webcard" id="card4" onclick="selectCard4()">
+            <div>
+              <img src="assets/icons/tempo.png" alt="">
+              <h3>TEMPO</h3>
+              <h4 id="text4"></h4>
+            </div>
           </div>
-        </div>
-
-        <div class="webcard">
-          <div>
-            <img src="assets/icons/segurança.png" alt="ícone segurança">
-            <h3>SEGURANÇA</h3>
-            <h4>
-              Projetar ambientes de acordo com as normas da AssociaçãoBrasileira de Normas Técnicas (ABNT), seguindo processos de segurança rígidos.
-            </h4>
+  
+          <div class="webcard" id="card5" onclick="selectCard5()">
+            <div>
+              <img src="assets/icons/segurança.png" alt="ícone segurança">
+              <h3>SEGURANÇA</h3>
+              <h4 id="text5"></h4>
+            </div>
           </div>
-        </div>
-
-        <div class="webcard">
-          <div>
-            <img src="assets/icons/brand_white.png" alt="ícone brand">
-            <h3>IDENTIDADE VISUAL</h3>
-            <h4>
-              Atrair mais clientes, alinhando o estilo da loja ao tipo do produto e a identidade da marca.
-            </h4>
+  
+          <div class="webcard" id="card6" onclick="selectCard6()">
+            <div>
+              <img src="assets/icons/brand_white.png" alt="ícone brand">
+              <h3>IDENTIDADE VISUAL</h3>
+              <h4 id="text6"></h4>
+            </div>
           </div>
-        </div>
-
+        
       </div>
 
 
@@ -357,13 +346,13 @@
         <div>
           <h3 data-anime="right">Você Sabia?</h3>
           <p data-anime="right">
-            Investir em uma boa arquiteta torna sua obra mais eficiente, reduzindo o custo final do projeto &#128525
+            Investir em uma boa arquiteta, além de atribuir todos esses fatores, reduzindo o custo final do seu projeto &#128525
           </p>
         </div>
       </div>
 
       <h2 data-anime="left">
-        Serviços Que Ofereço
+        Serviços Que Oferecemos
       </h2>
       <div id="serviços_que_ofereço" class="container" data-anime="left">
         <div class="paragrafo">
@@ -421,7 +410,7 @@
             <img src="assets/icons/outros.png" alt="ícone outros">
             <h3>OUTROS SERVIÇOS</h3>
             <h4>
-              Legalização, Parecer Técnico, Laudos e Perícias, Levantamento Arquitetônico<br><br>Memoriais Descritivos Para Obtenção de Alvarás<br><br>Atestado de Bombeiros
+              Legalização, Parecer Técnico, Laudos e Perícias, Levantamento Arquitetônico,Memoriais Descritivos Para Obtenção de Alvarás,Atestado de Bombeiros
             </h4>
           </div>
         </div>
@@ -752,7 +741,7 @@
           <div class="card_title">
             <div>
               <h3>Design de Interiores</h3>
-              <p>(Imóvel até 45m²)</p>
+              <p>Imóvel até 45m²</p>
             </div>
           </div>
           <img src="assets/icons/price_3000.png" alt="ícone price">
@@ -861,9 +850,12 @@
 
         <div class="product_card" data-anime="right">
           <div class="card_title">
-              <h3>Serviços Complementares Terceirizados</h3>
+            <div>
+              <h3>Serviços Complementares</h3>
+              <p>Terceirizados</p>
+            </div>
           </div>
-          <h3><br><br>Preços Variam de Acordo<br>Com Cada Serviço</h3>
+          <h3 id="imageTitle" ><br><br>Preços de Acordo Com Cada Serviço</h3>
           <a href="https://wa.me/5581996686852?text=Oi+Agni%21+Conheci+teu+trabalho+atrav%C3%A9s+do+seu+site+e+gostaria+de+saber+como+posso+contratar+Servi%C3%A7os+Complementares+Terceirizados" target="_blank" rel="external">
             <button id="button_4">Quero esse!</button>
           </a>
