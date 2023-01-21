@@ -42,7 +42,7 @@ button {
   justify-content: center;
   cursor:pointer;
   transition: 0.4s;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
   border: 2px solid black;
 }
 
@@ -332,10 +332,10 @@ a {
 }
 
 .section_two .youtube {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 100px;
 }
 
 .section_two #youtube {
@@ -438,16 +438,6 @@ max-width: 500px;
   margin-top: 10px;
 }
 
-.section_two .container {
-  margin: 30px 0 70px 0;
-  display: grid;
-  grid-template-areas: 
-  "item item item"
-  "item item item";
-  gap: 20px;
-  grid-auto-columns: 1fr 1fr 1fr;
-}
-
 .section_two .paragrafo {
   border-radius: 20px;
   padding: 10px 10px;
@@ -483,6 +473,48 @@ max-width: 500px;
   text-align: center;
   color: var(--dark);
   margin: 10px auto 150px auto;
+}
+
+.section_two .cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section_two video {
+  width: 30vw;
+  margin: 50px 0;
+}
+
+.section_two .serviços {
+  margin-left: 50px ;
+  max-width: 600px;
+}
+
+.section_two .serviço {
+  display: flex ;
+  margin-bottom: 20px;
+}
+
+.section_two .serviço h3 {
+  text-align: left;
+  margin: 0;
+  font-size: 15px;
+  color: var(--hover)
+}
+
+.section_two .serviço h4 {
+  font-size: 12px;
+  color: black;
+}
+
+.section_two .serviços img {
+  width: 40px;
+  height: 40px;
+  margin: 0 20px;
 }
 
 .section_three {
@@ -571,6 +603,7 @@ max-width: 500px;
   height: 64px;
   border-radius: 20px;
   margin-bottom: 80px;
+  border: none;
 }
 
 .section_four button img, .section_four_mobile button img {
@@ -603,7 +636,7 @@ max-width: 500px;
 .section_five .container {
   display: grid;
   gap: 15px; 
-  padding: 0 70px 100px 130px;
+  padding: 0 30px 100px 80px;
 
   grid-template-areas: 
   "item item item item";
@@ -625,20 +658,32 @@ max-width: 500px;
   font-size: 10px;
   font-weight: normal;
   margin: 0;
+  color: #b1b1b1;
+ }
+
+ .section_five .card_title p {
+  color: black;
  }
 
 .section_five .product_card {
   /* background-image: url("assets/images/bg_section_two.jpg");
   background-size: cover;
   background-position: right; */
-  background-color: var(--grey);
+  background-color: #2e363e;
   border-radius: 40px;
   padding: 0 0 30px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid black;
 }
+
+.section_five .product_card h3 {
+  color: var(--blue);
+}
+
+.section_five .card_title h3 {
+  color: black;
+ }
 
 .section_five .card_title {
   background-color: var(--blue);
@@ -663,6 +708,8 @@ max-width: 500px;
   height: 50px;
   font-size: 20px;
   animation: flutuar 2s linear infinite;
+  filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
+  border: none;
 }
 
 .product_card #button_1 {
@@ -677,14 +724,18 @@ max-width: 500px;
   padding: 0;
   margin-top: 50px;
   list-style:none;
-  width: 85%;
+  width: 95%;
 }
 
 .section_five .product_card li {
-  margin-top: 15px;
+  margin-top: 5px;
   display: flex;
   align-items: center;
   justify-content: left;
+}
+
+.section_five .product_card li p {
+  color: #b1b1b1;
 }
 
 .section_five .product_card ul li img {
@@ -846,6 +897,10 @@ max-width: 500px;
   align-items: center;
   justify-content: space-between;
   text-align: left;
+}
+
+.section_eight .question:hover {
+  color: #f64473;
 }
 
 .section_eight .answer {
@@ -1024,6 +1079,24 @@ display: none;
     text-align: left;
   }
 
+  .section_two .cont {
+    display: block;
+    margin-top: 20px;
+  }
+  
+  .section_two .serviços {
+    margin-left: 0px ;
+  }
+
+  .section_two video {
+    width: 90vw;
+    margin: 30px 0;
+  }
+
+  .section_two .curiosidade p {
+    text-align: left;
+  }
+
   .whatsapp_link {
     display: flex;
   }
@@ -1092,7 +1165,7 @@ display: none;
   }
 
   .section_two h3 {
-    text-align: justify;
+    text-align: left;
     color: var(--dark);
   }
 
@@ -1232,6 +1305,10 @@ display: none;
 
   .section_eight .question {
     padding: 20px 20px;
+  }
+
+  .section_eight .question h4, .section_eight .answer p {
+    font-size: 15px;
   }
 
   .section_eight .answer {
