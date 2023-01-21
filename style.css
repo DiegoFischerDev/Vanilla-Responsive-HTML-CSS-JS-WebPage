@@ -1097,6 +1097,10 @@ display: none;
     text-align: left;
   }
 
+  .section_two video {
+    display: none;
+  }
+
   .whatsapp_link {
     display: flex;
   }

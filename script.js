@@ -189,7 +189,7 @@ function faq_9() {
 const item = document.querySelectorAll("[data-anime]");
 
 const animeScroll = () => {
-  const windowTop = window.pageYOffset + window.innerHeight * 0.85 ;
+  const windowTop = window.pageYOffset + window.innerHeight * 0.75 ;
 
   item.forEach((element) => {
     if (windowTop > element.offsetTop) {
