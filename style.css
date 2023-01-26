@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Merriweather+Sans:wght@400;700&display=swap');
 
+/* @font-face {
+  font-family: 'olivier';
+  src: url('assets/fonts/olivier.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+
+  Format() = opentype (otf)  || truetype (ttf) || embedded-opentype
+} */
+
+
 :root {
   --dark: #01111E;
   --blue: #7FD8D1;
@@ -55,17 +65,22 @@ button:hover {
 }
 
 h1 {
+  /* font-family: 'Ailerons'; */
+  font-weight: normal;
   font-size: .1px;
   color: var(--dark);
 }
 
 h2 {
+  /* font-family: 'Ailerons'; */
+  font-weight: normal;
   font-family: 'Merienda', cursive;
   font-size: 30px;
-  font-weight: 400;
 }
 
 h3 {
+  /* font-family: 'Ailerons'; */
+  font-weight: normal;
   font-family: 'Merienda', cursive;
   font-size: 25px;
   font-weight: 400;
