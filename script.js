@@ -7,7 +7,37 @@ function hiden_section_one() {
   section_menu.classList.toggle('hiden')
 }
 
+const imagesSectionOne = document.querySelector('#images_section_one')
+
+let index = 0
+ChangeImg()
+
+function ChangeImg() {
+  index++
+  if(index > 4){index = 1}
+  imagesSectionOne.setAttribute('src', `assets/images/imagembg${index}.JPEG`)
+  setTimeout(ChangeImg, 5000)
+}
+
+
+
 /******* Section_Two ***************/
+
+const menu = document.querySelector('#menu')
+
+window.addEventListener('scroll', function () {
+  ShowMenu()
+})
+
+menu.style.opacity = 0
+
+function ShowMenu() {
+  if (window.scrollY >= 1500) {
+    menu.style.opacity = 1
+  } else {
+    menu.style.opacity = (window.scrollY-500)/500
+  }
+}
 
 function selectCard1 () {
   const card1 =  document.getElementById('card1')

@@ -11,7 +11,8 @@
 
 
 :root {
-  --dark: #01111E;
+  /* --dark: #01111E; */
+  --dark: black;
   --blue: #7FD8D1;
   --grey: #EFEFEF;
   --dark_grey: #8e8e8e;
@@ -260,21 +261,47 @@ a {
   overflow: hidden;
 }
 
-.section_one .container {
-  display: flex;
-  justify-content: center;
-  padding: 20px 0;
-  margin-left: 30px;
+.section_one h4 {
+  color: var(--grey)
 }
 
-.section_one .container img {
-  height: 75vh;
+.section_one h3 {
+  color: var(--grey);
+  font-size: 20px;
+  max-width: 400px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.section_one .container {
+  background-color: black;
+  display: flex;
+  padding-top: 30px;
+  height: 100vh;
+}
+
+.section_one .container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30vw;
+}
+
+.section_one .container h2 {
+  color: #EFEFEF;
+  width: 25vw;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.section_one #images_section_one {
+  width: 60vw;
 }
 
 .section_one .cards {
   display: flex;
   position: absolute;
-  bottom: -20px;
+  bottom: 0px;
   width: 100%;
   height: 150px;
   align-items: center;
@@ -343,7 +370,7 @@ a {
   background-size: cover;
   background-position: center; */
   background-color: var(--grey);
-  padding: 70px 100px 70px 150px;
+  padding: 70px 100px 130px 150px;
 }
 
 .section_two .youtube {
@@ -360,7 +387,7 @@ a {
 }
 
 .section_two h2 {
-  margin: 40px auto 10px auto;
+  margin: 150px auto 10px auto;
   max-width: 900px;
   text-align: center;
 }
@@ -370,11 +397,6 @@ font-weight: normal;
 margin: 0 auto 10px auto;
 text-align: center;
 max-width: 500px;
-}
-
-.curiosidade p {
-  margin-bottom: 150px;
-  text-align: left;
 }
 
 .section_two span {
@@ -466,7 +488,7 @@ max-width: 500px;
 }
 
 .section_two .paragrafo:hover {
-  background: black;
+  background: #01111E;
 }
 
 .section_two .paragrafo img {
@@ -476,18 +498,6 @@ max-width: 500px;
 .section_two .paragrafo h4 {
   color: var(--white);
   font-size: 15px;
-}
-
-.section_two .curiosidade {
-  text-align: center;
-  color: var(--dark);
-  margin: 30px auto 20px auto;
-}
-
-.section_two .curiosidade p {
-  text-align: center;
-  color: var(--dark);
-  margin: 10px auto 150px auto;
 }
 
 .section_two .cont {
@@ -533,12 +543,26 @@ max-width: 500px;
 }
 
 .section_three {
-  background-image: url("assets/images/bg_section_three2.jpg");
-  background-size: cover;
-  background-position: top;
-  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark);
   color: var(--white);
   padding: 100px 100px;
+  position: relative;
+}
+
+.section_three #expert {
+  position: absolute;
+  top: -150px;
+  right: 30vw;
+
+  width: 300px;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 .section_three h2 {
@@ -546,7 +570,7 @@ max-width: 500px;
 }
 
 .section_three .text_box {
-  margin-left: auto;
+  margin: 20px;
   width: 50%;
   position: relative;
 }
@@ -581,9 +605,7 @@ max-width: 500px;
 }
 
 .section_four {
-  background-image: url("assets/images/bg_section_two.jpg");
-  background-size: cover;
-  background-position: right;
+  background-color: var(--grey);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -846,7 +868,7 @@ max-width: 500px;
 }
 
 .section_seven .container .testimony_card:hover {
-  background-color: black;
+  background-color: var(--dark_grey);
 }
 
 .section_seven .container .testimony_card .testimony_card_title .div_flex {
@@ -1034,16 +1056,21 @@ footer a {
     font-size: 20px;
   }
 
+  .section_one h2 {
+    font-size: 18px;
+  }
+
+  .section_one h3 {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
   .section_two .container {
     grid-template-areas: 
     "item item"
     "item item"
     "item item";
     gap: 30px;
-  }
-
-  .section_three {
-    height: 1000px;
   }
 
   .section_four {
@@ -1063,7 +1090,7 @@ footer a {
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
 
   .carrossel_card {
     width: 75vw;
@@ -1083,15 +1110,36 @@ footer a {
   }
 
   .section_menu_web {
-display: none;
+    display: none;
+  }
+
+  #menu {
+    transition: 2s;
+  }
+
+  .section_one .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section_one #images_section_one {
+    width: 100%;
+  }
+
+  .section_one h2 {
+    display: none;
+  }
+
+  .section_one h3 {
+    display: none;
+  }
+
+  #title_section_two {
+    display: none;
   }
 
   .section_two .webcards {
     display: none;
-  }
-
-  .curiosidade p {
-    text-align: left;
   }
 
   .section_two .cont {
@@ -1106,10 +1154,6 @@ display: none;
   .section_two video {
     width: 90vw;
     margin: 30px 0;
-  }
-
-  .section_two .curiosidade p {
-    text-align: left;
   }
 
   .section_two video {
@@ -1148,10 +1192,6 @@ display: none;
     padding: 10px 20px;
   }
 
-  .section_one .container img {
-    height: 50vh;
-  }
-
   .section_one .cards {
     display: inherit;
     position: absolute;
@@ -1168,7 +1208,11 @@ display: none;
   }
 
   .section_two {
-    padding: 50px 20px;
+    padding: 50px 20px 150px 20px;
+  }
+
+  .section_two #expert {
+    position: inherit;
   }
 
   .section_two .carrossel {
@@ -1180,6 +1224,7 @@ display: none;
   }
 
   .section_two h2 {
+    margin-top: 0px;
     text-align: center;
   }
 
@@ -1197,15 +1242,12 @@ display: none;
   }
 
   .section_three {
-    background-image: url("assets/images/bg_section_three_mobile2.jpg");
-    background-attachment: initial;
     padding: 15px 20px 20px 20px;
-    height: 1350px;
   }
 
   .section_three h2 {
     text-align: center;
-    margin: 50px 0 550px 0;
+    margin: 350px 0 50px 0;
     color: var(--grey);
   }
 
@@ -1221,9 +1263,6 @@ display: none;
 
   .section_four_mobile {
     display: inherit;
-    background-image: url("assets/images/bg_section_two.jpg");
-    background-size: cover;
-    background-position: top;
     height: 1200px;
     padding: 20px;
   }
@@ -1349,9 +1388,11 @@ display: none;
 
   h4 {
     font-size: 15px;
-  }.section_one .container {
-  display: flex;
-}
+  }
+  
+  .section_one .container {
+    display: flex;
+  }
 
   .section_one .cards {
     display: flex;
