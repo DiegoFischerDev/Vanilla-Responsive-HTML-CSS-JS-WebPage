@@ -9,14 +9,29 @@ function hiden_section_one() {
 
 const imagesSectionOne = document.querySelector('#images_section_one')
 
-let index = 0
+let index = -1
+
+let urls = [
+  "https://res.cloudinary.com/di9oiqvom/image/upload/v1677941973/Agni/imagembg1_jjbtal.jpg",
+  "https://res.cloudinary.com/di9oiqvom/image/upload/v1677941974/Agni/imagembg2_dqyaps.jpg",
+  "https://res.cloudinary.com/di9oiqvom/image/upload/v1677941974/Agni/imagembg3_jnr8ch.jpg",
+  "https://res.cloudinary.com/di9oiqvom/image/upload/v1677941974/Agni/imagembg4_yzoaz7.jpg"
+]
+
+RemoveClass()
 ChangeImg()
 
 function ChangeImg() {
   index++
-  if(index > 4){index = 1}
-  imagesSectionOne.setAttribute('src', `assets/images/imagembg${index}.JPEG`)
-  setTimeout(ChangeImg, 5000)
+  if(index > urls.length-1){index = 0}
+  imagesSectionOne.setAttribute('src', urls[index])
+  imagesSectionOne.classList.add("scale")
+  setTimeout(ChangeImg, 4001)
+}
+
+function RemoveClass() {
+  imagesSectionOne.classList.remove("scale")
+  setTimeout(RemoveClass, 4000)
 }
 
 
@@ -217,6 +232,7 @@ function faq_9() {
 
 
 const item = document.querySelectorAll("[data-anime]");
+const ExpertImg = document.querySelector('#expert');
 
 const animeScroll = () => {
   const windowTop = window.pageYOffset + window.innerHeight * 0.75 ;
@@ -228,6 +244,12 @@ const animeScroll = () => {
       element.classList.remove("animate");
     }
   });
+
+  console.log(ExpertImg.offsetTop)
+
+  if(windowTop < 2000){
+    ExpertImg.classList.remove("animate");
+  }
 };
 
 animeScroll();
