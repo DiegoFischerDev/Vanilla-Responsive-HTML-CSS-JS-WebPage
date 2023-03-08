@@ -1,6 +1,8 @@
 /****** section_one  ****************/
 const section_one = document.querySelector('#section_one')
 const section_menu = document.querySelector('#section_menu')
+const body = document.querySelector('body')
+let modal = true
 
 function hiden_section_one() {
   section_one.classList.toggle('hiden')
@@ -9,30 +11,59 @@ function hiden_section_one() {
 
 const imagesSectionOne = document.querySelector('#images_section_one')
 
-let index = -1
 
-let urls = [
-  "https://res.cloudinary.com/di9oiqvom/image/upload/v1677941973/Agni/imagembg1_jjbtal.jpg",
-  "https://res.cloudinary.com/di9oiqvom/image/upload/v1677941974/Agni/imagembg2_dqyaps.jpg",
-  "https://res.cloudinary.com/di9oiqvom/image/upload/v1677941974/Agni/imagembg3_jnr8ch.jpg",
-  "https://res.cloudinary.com/di9oiqvom/image/upload/v1677941974/Agni/imagembg4_yzoaz7.jpg"
-]
+let firstImage
+let lastImage
+let index
 
-RemoveClass()
-ChangeImg()
+function comercial(){
+  firstImage = 1;
+  lastImage = 50;
+  index = firstImage -1;
+  RemoveClass()
+  ChangeImg()
+  closeModal()
+}
+
+function residencial(){
+  firstImage = 51;
+  lastImage = 90;
+  index = firstImage -1;
+  RemoveClass()
+  ChangeImg()
+  closeModal()
+}
+
 
 function ChangeImg() {
   index++
-  if(index > urls.length-1){index = 0}
-  imagesSectionOne.setAttribute('src', urls[index])
+  if(index > lastImage) index = firstImage;
+  imagesSectionOne.setAttribute('src', `https://www.suaarquiteta.com.br/assets/Projetos/${index}.jpeg`)
   imagesSectionOne.classList.add("scale")
-  setTimeout(ChangeImg, 4001)
+  setTimeout(ChangeImg, 4000)
 }
 
 function RemoveClass() {
   imagesSectionOne.classList.remove("scale")
   setTimeout(RemoveClass, 4000)
 }
+
+function closeModal() {
+  document.querySelector(".modalType").classList.add("closeModal")
+  setTimeout(displayNone, 2000)
+  modal = false
+  document.querySelector("html").classList.add("smooth")
+}
+
+function displayNone(){
+  document.querySelector(".modalType").style.display = "none";
+}
+
+function setTopo(){
+  if (modal) $(window).scrollTop(0);
+}
+
+$(window).bind('scroll', setTopo);
 
 
 
@@ -244,8 +275,6 @@ const animeScroll = () => {
       element.classList.remove("animate");
     }
   });
-
-  console.log(ExpertImg.offsetTop)
 
   if(windowTop < 2000){
     ExpertImg.classList.remove("animate");

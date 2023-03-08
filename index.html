@@ -77,17 +77,30 @@
 
       gtag('config', 'AW-11070437917');
     </script>
+
+    <div class="modalType">
+      <div class="container">
+        <img src="assets/images/logo_agni_garcia_arquitetura.png" alt="text_box">
+        <h2>Bem Vindo(a)!</h2>
+        <h2>Para melhor te atender, me informe qual tipo de projeto você deseja:</h2>
+        <div class="modalButtons">
+          <a href="#section_one"><button onclick="comercial()" >Comercial</button></a>
+          <a href="#section_one"><button onclick="residencial()">Residencial</button></a>
+        </div>
+      </div>
+    </div>
     
     <section id="section_one" class="section_one">
       <div class="container">
-        <div>
+        <div class="text_section_one">
           <h1>Aquitetura preço em Recife. Design de interiores. Alvará de Funcionamento. Móveis Planejados. Arquiteto e Arquiteta em Recife. Projeto de Iluminação.Memorial Descritivo.</h1>
           <h2>Você Acaba De Encontrar A Sua Arquiteta!</h2>
           <img id="logoSectionOne" src="assets/images/logo_agni_garcia_arquitetura_white.png" alt="text_box">
-          <h3>Arquitetura moderna à preço popular</h3>
-          <h3>Comercial ou Residencial</h3>
+          <h3>Arquitetura moderna a preço popular</h3>
         </div>
-        <img id="images_section_one" src="" alt="text_box">
+        <div class="imageContainer">
+          <img id="images_section_one" src="" alt="text_box">
+        </div>
       </div>
       <div class="cards">
 
@@ -101,10 +114,10 @@
           <h4>Quem Somos</h4>
         </a>
 
-        <a href="#section_four" class="card" onclick="">
+        <!-- <a href="#section_four" class="card" onclick="">
           <img src="assets/icons/projetos_hover.png" alt="ícone projetos" />
           <h4>Projetos</h4>
-        </a>
+        </a> -->
 
         <a href="#section_five" class="card" onclick="">
           <img src="assets/icons/planos_hover.png" alt="ícone valores" />
@@ -119,6 +132,11 @@
         <a href="#section_eight" class="card" onclick="">
           <img src="assets/icons/duvidas_hover.png" alt="ícone dúvidas" />
           <h4>Dúvidas Frequentes</h4>
+        </a>
+
+        <a href="https://wa.me/5581996686852?text=Oi+Agni%21+Conheci+teu+trabalho+atrav%C3%A9s+do+seu+site+e+gostaria+de+saber+mais+informa%C3%A7%C3%B5es" class="card" onclick="">
+          <img src="assets/icons/whatsapp.png" alt="ícone dúvidas" />
+          <h4>Contato</h4>
         </a>
 
       </div>
@@ -159,8 +177,8 @@
         <a class="menu_option option_two" href="#section_three">
         </a>
 
-        <a class="menu_option option_three" href="#section_four">
-        </a>
+        <!-- <a class="menu_option option_three" href="#section_four">
+        </a> -->
 
         <a class="menu_option option_four" href="#section_five">
         </a>
@@ -192,9 +210,9 @@
             <h4>Quem Somos</h4>
           </a>
   
-          <a class="menu_option option_three" href="#section_four">
+          <!-- <a class="menu_option option_three" href="#section_four">
             <h4>Projetos</h4>
-          </a>
+          </a> -->
   
           <a class="menu_option option_four" href="#section_five">
             <h4>Planos/Valores</h4>
@@ -361,42 +379,47 @@
 
     <section id="section_three" class="section_three">
 
-      <img id="expert" data-anime="rotate" src="assets/images/expert.png" alt="Imagem Agni Garcia">
+      <h2>Conheça Sua Arquiteta</h2>
 
-      <div class="text_box" data-anime="up">
-
-        <h2>Conheça Sua Arquiteta</h2>
-        <h3>Agni Garcia</h3>
-        <h4>Arquiteta & Urbanista</h4><br>
-      
-        <h4><span>Pós Graduada em</span></h4>
-        <h4>Gestão de Obras, Orçamentos e Perícias</h4>
-        <h4>Gestão de Patrimônio Histórico</h4>
-        <h4>Design de Interiores</h4>
-
-        <p data-anime="up">
-          “Sou arquiteta e designer de interiores há mais de 8 anos, com base em Recife, porém ofereço projetos para todo o território nacional. Sempre sonhei em democratizar a arquitetura, por isso busco oferecer planos a preços populares.
-          <br /><br />
-          Eu sei o quanto um ambiente bonito e bem planejado impacta no dia a dia e bem-estar das pessoas, por isso nosso atendimento é humanizado e personalizado para atender as necessidades específicas de cada cliente.
-          <br /><br />
-          Hoje conto com uma equipe de talentosos profissionais que me apoiam nessa missão, desde mestres de obra, marceneiros, eletricistas, advogados e equipe de marketing para proporcionar maior número de soluções para nossos clientes.”
-          <br /><br />
-        </p>
-
-        <div>
-          <img
-            id="award_image"
-            src="assets/icons/icon_award.png"
-            alt="award"
-            data-anime="down"
-          />
-          <img
-            id="smile_image"
-            src="assets/icons/icon_smile 1.png"
-            alt="smile"
-            data-anime="down"
-          />
+      <div class="container">
+        
+        <img id="expert" data-anime="rotate" src="assets/images/expert.png" alt="Imagem Agni Garcia">
+  
+        <div class="text_box" data-anime="up">
+          
+          <h3>Agni Garcia</h3>
+          <h4>Arquiteta & Urbanista</h4><br>
+        
+          <h4><span>Pós Graduada em</span></h4>
+          <h4>Gestão de Obras, Orçamentos e Perícias</h4>
+          <h4>Gestão de Patrimônio Histórico</h4>
+          <h4>Design de Interiores</h4>
+  
+          <p data-anime="up">
+            “Sou arquiteta e designer de interiores há mais de 8 anos, com base em Recife, porém ofereço projetos para todo o território nacional. Sempre sonhei em democratizar a arquitetura, por isso busco oferecer planos a preços populares.
+            <br /><br />
+            Eu sei o quanto um ambiente bonito e bem planejado impacta no dia a dia e bem-estar das pessoas, por isso nosso atendimento é humanizado e personalizado para atender as necessidades específicas de cada cliente.
+            <br /><br />
+            Hoje conto com uma equipe de talentosos profissionais que me apoiam nessa missão, desde mestres de obra, marceneiros, eletricistas, advogados e equipe de marketing para proporcionar maior número de soluções para nossos clientes.”
+            <br /><br />
+          </p>
+  
+          <div>
+            <img
+              id="award_image"
+              src="assets/icons/icon_award.png"
+              alt="award"
+              data-anime="down"
+            />
+            <img
+              id="smile_image"
+              src="assets/icons/icon_smile 1.png"
+              alt="smile"
+              data-anime="down"
+            />
+          </div>
         </div>
+
 
       </div>
     </section>
