@@ -157,14 +157,6 @@ function selectCard6 () {
   }
 }
 
-
-/******* Section_four **************/
-$(".option").click(function () {
-  $(".option").removeClass("active");
-  $(this).addClass("active");
-});
-
-
 /******* Section Eight ************/
 
 const arrow_down_faq_1 = document.querySelector('#arrow_down_faq_1')
